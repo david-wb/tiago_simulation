@@ -66,6 +66,7 @@ class PlayMotionActionClient(Node):
                     break
 
     def send_goal(self, motion_name, skip_planning):
+        self._is_successful = None
         goal_msg = PlayMotion2.Goal()
         goal_msg.motion_name = motion_name
         goal_msg.skip_planning = skip_planning
