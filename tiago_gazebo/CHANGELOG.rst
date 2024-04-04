@@ -2,8 +2,8 @@
 Changelog for package tiago_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.1.1 (2024-04-04)
+------------------
 * Reset self._is_successful when sending a goal
 * Enable tuck_arm test
 * Contributors: Noel Jimenez
