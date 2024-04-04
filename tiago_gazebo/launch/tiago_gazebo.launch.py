@@ -61,11 +61,6 @@ def generate_launch_description():
         description='Specify if launching Navigation2'
     )
 
-    slam_arg = DeclareLaunchArgument(
-        'slam', default_value='False',
-        description='Specify if launching SLAM Toolbox'
-    )
-
     moveit_arg = DeclareLaunchArgument(
         'moveit', default_value='true',
         description='Specify if launching MoveIt 2'
@@ -130,7 +125,6 @@ def generate_launch_description():
     ld.add_action(tiago_bringup)
 
     ld.add_action(navigation_arg)
-    ld.add_action(slam_arg)
     ld.add_action(navigation)
 
     ld.add_action(moveit_arg)
