@@ -2,6 +2,12 @@
 Changelog for package tiago_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Reset self._is_successful when sending a goal
+* Enable tuck_arm test
+* Contributors: Noel Jimenez
+
 4.1.0 (2024-02-28)
 ------------------
 * Launch MoveIt 2 by default
