@@ -66,10 +66,17 @@ Also you can add it to your .bashrc
 Launch gazebo simulation:
 
 ```console
-ros2 launch tiago_gazebo tiago_gazebo.launch.py [arm:=no-arm]
+ros2 launch tiago_gazebo tiago_gazebo.launch.py is_public_sim:=true [arm:=no-arm]
 ```
 
 <img src="doc/media/tiago_gazebo.png" title="TIAGo simulation" width="85%">
+
+You can launch gazebo simulation using PAL office gazebo world by executing:
+
+```console
+ros2 launch tiago_gazebo tiago_gazebo.launch.py is_public_sim:=true world_name:=pal_office [arm:=no-arm]
+```
+
 
 To move the robot you can use the following command from another terminal:
 
@@ -106,6 +113,14 @@ ros2 launch tiago_gazebo tiago_gazebo.launch.py navigation:=true is_public_sim:=
 
 Then, goals can be sent in the same way.
 
+### Simulation + Navigation 2 + SLAM
+
+You can start the SLAM and navigation in simulation by using
+
+```console
+ros2 launch tiago_gazebo tiago_gazebo.launch.py is_public_sim:=true navigation:=true slam:=true
+```
+
 ### Simulation + MoveIt 2
 
 To launch TIAGo simulation with MoveIt 2 you can use
@@ -133,3 +148,4 @@ Finally, to launch all together:
 ```console
 ros2 launch tiago_gazebo tiago_gazebo.launch.py navigation:=true moveit:=true is_public_sim:=true
 ```
+To use private simulation you can avoid to set is_public_sim argument.

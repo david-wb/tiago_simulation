@@ -81,9 +81,9 @@ def generate_launch_description():
         launch_arguments={'use_sim_time': 'True'}.items())
 
     navigation = include_launch_py_description(
-        pkg_name="tiago_2dnav",
-        paths=["launch", "tiago_nav_bringup.launch.py"],
-        condition=IfCondition(LaunchConfiguration("navigation")))
+        pkg_name='tiago_2dnav',
+        paths=['launch', 'tiago_nav_bringup.launch.py'],
+        condition=IfCondition(LaunchConfiguration('navigation')))
 
     move_group = include_launch_py_description(
         'tiago_moveit_config', ['launch', 'move_group.launch.py'],
