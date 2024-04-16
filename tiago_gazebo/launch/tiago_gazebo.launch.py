@@ -57,7 +57,7 @@ def get_resource_paths(packages_names):
 def generate_launch_description():
 
     navigation_arg = DeclareLaunchArgument(
-        'navigation', default_value='false',
+        'navigation', default_value='False',
         description='Specify if launching Navigation2'
     )
 
@@ -81,14 +81,8 @@ def generate_launch_description():
         launch_arguments={'use_sim_time': 'True'}.items())
 
     navigation = include_launch_py_description(
-        'tiago_2dnav', ['launch', 'tiago_nav_bringup.launch.py'],
-        launch_arguments={
-            'use_sim_time': 'True',
-            'remappings_file': os.path.join(
-                get_package_share_directory('tiago_2dnav'),
-                'params',
-                'tiago_remappings_sim.yaml')
-        }.items(),
+        pkg_name='tiago_2dnav',
+        paths=['launch', 'tiago_nav_bringup.launch.py'],
         condition=IfCondition(LaunchConfiguration('navigation')))
 
     move_group = include_launch_py_description(
