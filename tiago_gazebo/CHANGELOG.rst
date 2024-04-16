@@ -2,6 +2,17 @@
 Changelog for package tiago_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'feat/ros2-pipelines' into 'humble-devel'
+  navigation pipeline integration for private sim
+  See merge request robots/tiago_simulation!142
+* cosmetic and update readme
+* removed slam arg
+* linters
+* navigation pipeline integration for private sim
+* Contributors: andreacapodacqua, antoniobrandi
+
 4.1.1 (2024-04-04)
 ------------------
 * Reset self._is_successful when sending a goal
