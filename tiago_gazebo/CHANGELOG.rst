@@ -2,6 +2,14 @@
 Changelog for package tiago_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'sgg/feat/base_type_omni_base' into 'humble-devel'
+  Migrate to new parameter style
+  See merge request robots/tiago_simulation!144
+* Migrate to new parameter style
+* Contributors: Sergi Garcia, davidterkuile
+
 4.1.2 (2024-04-16)
 ------------------
 * Merge branch 'feat/ros2-pipelines' into 'humble-devel'
