@@ -2,8 +2,8 @@
 Changelog for package tiago_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.1.3 (2024-04-22)
+------------------
 * Merge branch 'sgg/feat/base_type_omni_base' into 'humble-devel'
   Migrate to new parameter style
   See merge request robots/tiago_simulation!144
