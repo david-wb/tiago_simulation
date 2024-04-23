@@ -109,6 +109,7 @@ def declare_actions(
         paths=['launch', 'move_group.launch.py'],
         launch_arguments={
             "robot_name": robot_name,
+            "arm_type": launch_args.arm_type,
             "use_sim_time": 'True'},
         condition=IfCondition(LaunchConfiguration('moveit')))
 
@@ -128,6 +129,7 @@ def declare_actions(
         pkg_name='tiago_bringup', paths=['launch', 'tiago_bringup.launch.py'],
         launch_arguments={
             "use_sim_time": LaunchConfiguration("use_sim_time"),
+            "arm_type": launch_args.arm_type,
             "laser_model": launch_args.laser_model,
             "camera_model": launch_args.camera_model,
             "base_type": launch_args.base_type,
