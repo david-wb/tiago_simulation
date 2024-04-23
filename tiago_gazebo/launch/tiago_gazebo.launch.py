@@ -109,8 +109,10 @@ def declare_actions(
         paths=['launch', 'move_group.launch.py'],
         launch_arguments={
             "robot_name": robot_name,
+            "use_sim_time": 'True',
+            "base_type": LaunchConfiguration("base_type"),
             "arm_type": launch_args.arm_type,
-            "use_sim_time": 'True'},
+        },
         condition=IfCondition(LaunchConfiguration('moveit')))
 
     launch_description.add_action(move_group)
