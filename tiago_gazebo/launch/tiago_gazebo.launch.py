@@ -31,6 +31,7 @@ from launch_pal.robot_arguments import TiagoArgs
 class LaunchArguments(LaunchArgumentsBase):
 
     base_type: DeclareLaunchArgument = TiagoArgs.base_type
+    has_screen: DeclareLaunchArgument = TiagoArgs.has_screen
     arm_type: DeclareLaunchArgument = TiagoArgs.arm_type
     end_effector: DeclareLaunchArgument = TiagoArgs.end_effector
     ft_sensor: DeclareLaunchArgument = TiagoArgs.ft_sensor
