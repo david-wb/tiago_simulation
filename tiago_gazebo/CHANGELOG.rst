@@ -2,6 +2,14 @@
 Changelog for package tiago_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'abr/fix/old-params' into 'humble-devel'
+  remove old params
+  See merge request robots/tiago_simulation!147
+* remove old params
+* Contributors: antoniobrandi
+
 4.1.3 (2024-04-22)
 ------------------
 * Merge branch 'sgg/feat/base_type_omni_base' into 'humble-devel'
