@@ -2,8 +2,8 @@
 Changelog for package tiago_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.1.4 (2024-04-25)
+------------------
 * Merge branch 'abr/fix/old-params' into 'humble-devel'
   remove old params
   See merge request robots/tiago_simulation!147
