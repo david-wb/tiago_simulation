@@ -2,8 +2,8 @@
 Changelog for package tiago_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.1.5 (2024-05-10)
+------------------
 * Merge branch 'omm/fix/launch_standarization' into 'humble-devel'
   Launch files moved to TIAGo family standard
   See merge request robots/tiago_simulation!145
