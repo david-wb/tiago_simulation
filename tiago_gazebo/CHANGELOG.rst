@@ -2,6 +2,19 @@
 Changelog for package tiago_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'omm/fix/launch_standarization' into 'humble-devel'
+  Launch files moved to TIAGo family standard
+  See merge request robots/tiago_simulation!145
+* Suggested changeSuggested changes
+* Restored has_screen arg
+* Passing base_type argument
+* Passing the needed args
+* Suggested changes
+* Launch files moved to TIAGo family standard
+* Contributors: Oscar, davidterkuile
+
 4.1.4 (2024-04-25)
 ------------------
 * Merge branch 'abr/fix/old-params' into 'humble-devel'
