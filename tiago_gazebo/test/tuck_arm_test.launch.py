@@ -30,7 +30,8 @@ def generate_test_description():
 
     launch_tiago_gazebo = include_launch_py_description(
         'tiago_gazebo', ['launch', 'tiago_gazebo.launch.py'],
-        launch_arguments={'world_name': 'empty_world'}.items())
+        launch_arguments={'world_name': 'empty_world',
+                          'is_public_sim': 'True'}.items())
 
     tuck_arm_test = launch_testing.actions.GTest(
         path=os.path.join(tiago_gazebo_dir, 'test', 'tuck_arm_test'),
