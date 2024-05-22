@@ -143,7 +143,8 @@ def declare_actions(
             "wrist_model": launch_args.wrist_model,
             "ft_sensor": launch_args.ft_sensor,
             "end_effector": launch_args.end_effector,
-            "has_screen": launch_args.has_screen
+            "has_screen": launch_args.has_screen,
+            "is_public_sim": launch_args.is_public_sim,
         }
     )
 
