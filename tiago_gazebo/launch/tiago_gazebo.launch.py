@@ -13,21 +13,19 @@
 # limitations under the License.
 
 import os
-from dataclasses import dataclass
 from os import environ, pathsep
-
 from ament_index_python.packages import get_package_prefix
 from launch import LaunchDescription
-from launch.actions import (DeclareLaunchArgument, SetEnvironmentVariable,
-                            SetLaunchConfiguration)
+from launch.actions import DeclareLaunchArgument, SetEnvironmentVariable, SetLaunchConfiguration
 from launch.conditions import IfCondition
 from launch.substitutions import LaunchConfiguration
-from launch_ros.actions import Node
-
-from launch_pal.actions import CheckPublicSim
-from launch_pal.arg_utils import CommonArgs, LaunchArgumentsBase
 from launch_pal.include_utils import include_scoped_launch_py_description
+from launch_pal.arg_utils import LaunchArgumentsBase
+from dataclasses import dataclass
+from launch_pal.arg_utils import CommonArgs
+from launch_ros.actions import Node
 from launch_pal.robot_arguments import TiagoArgs
+from launch_pal.actions import CheckPublicSim
 
 
 @dataclass(frozen=True)
@@ -97,13 +95,12 @@ def declare_actions(
 
     navigation = include_scoped_launch_py_description(
         pkg_name='tiago_2dnav',
-        paths=['launch', 'tiago_nav_bringup.launch.py'],
+        paths=['launch', 'tiago_sim_nav_bringup.launch.py'],
         launch_arguments={
             "robot_name":  robot_name,
             "is_public_sim": launch_args.is_public_sim,
             "laser":  launch_args.laser_model,
-            "base_type": launch_args.base_type,
-            "world_name": launch_args.world_name,
+            "base_type": launch_args.base_type
         },
         condition=IfCondition(LaunchConfiguration('navigation')))
 
