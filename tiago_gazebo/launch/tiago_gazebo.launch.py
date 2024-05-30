@@ -95,12 +95,13 @@ def declare_actions(
 
     navigation = include_scoped_launch_py_description(
         pkg_name='tiago_2dnav',
-        paths=['launch', 'tiago_sim_nav_bringup.launch.py'],
+        paths=['launch', 'tiago_nav_bringup.launch.py'],
         launch_arguments={
             "robot_name":  robot_name,
             "is_public_sim": launch_args.is_public_sim,
             "laser":  launch_args.laser_model,
-            "base_type": launch_args.base_type
+            "base_type": launch_args.base_type,
+            "world_name": launch_args.world_name,
         },
         condition=IfCondition(LaunchConfiguration('navigation')))
 
